@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 import PostComponent from "./PostComponent";
 
-export const API_URL = "http://localhost:3001/api/posts"
+export const API_URL:string = "http://localhost:3001/api/posts"
 
 function App() {
 
@@ -10,8 +10,6 @@ function App() {
     id: number;
     text: string;
   };
-  
-  let postsArr: Post[] = [];
 
   const inputRef = useRef();
   const [postList, setPostList] = useState<Post[]>([])

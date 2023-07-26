@@ -11,7 +11,7 @@ function getAll(req: Request, res: Response) {
   res.status(200).json(postsArr);
 }
 
-let currentId = 1;
+let currentId: number = 1;
 
 function create(req: Request, res: Response) {
   let text: string = req.body.text;

@@ -4,7 +4,7 @@ import { getAll, create, updateByID, deleteByID } from "./endpoints.js";
 
 const app = express();
 
-const port = 3001;
+const port = 3001; //I think adding number type alias might break something so I haven't done it.
 
 app.use(express.json());
 app.use(cors());
