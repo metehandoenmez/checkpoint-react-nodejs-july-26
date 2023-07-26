@@ -17,3 +17,7 @@
 button {
   padding: 5px 10px 5px 10px;
 }
+
+body {
+  background: linear-gradient(rgba(0, 0, 255, 0.178), rgba(255, 0, 0, 0.178));
+}
