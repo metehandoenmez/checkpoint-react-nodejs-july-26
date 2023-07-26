@@ -14,7 +14,7 @@ function App() {
   const inputRef = useRef();
   const [postList, setPostList] = useState<Post[]>([])
 
-  const getPosts = async (text) => {
+  const getPosts = async (text: string) => {
     const response = await fetch(API_URL, {
       method: "GET",
       mode: "cors",
@@ -30,7 +30,7 @@ function App() {
     
   }
 
-  const handleDelete = async (id) => {
+  const handleDelete = async (id:number) => {
     
       await fetch(API_URL + "/" + id, {
         method: "DELETE",
